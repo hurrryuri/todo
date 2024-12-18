@@ -28,7 +28,7 @@ public class TodoEntity extends BaseEntity{
     @Column(name="b", length = 100)
     private String b;   //해야할 일
     @Column(name="c", length = 20)
-    private LocalDateTime c;    //날짜
+    private LocalDate c;    //날짜
     @Column(name="d", length = 20)
     private String d;   //중요도
     @Column(name="e", length = 20)

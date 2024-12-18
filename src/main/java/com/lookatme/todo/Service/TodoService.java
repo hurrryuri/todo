@@ -88,6 +88,8 @@ public class TodoService {
     ----------------------------------------- */
     public void d(TodoDTO todoDTO){
         //DTO -> Entity로 변환
+       /* 컨트롤에서 todoDTO를 받아서
+                받은todoDTO를 모델맵퍼를 활용해서 todoDTO를*/
         TodoEntity todoEntity = modelMapper.map(todoDTO, TodoEntity.class);
         //유효성 검사
         //id값으로 테이블에서 조회해서 레코드를 읽어온다. (있으면 레코드, 없으면 Null)
